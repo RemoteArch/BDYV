@@ -1,0 +1,275 @@
+/*general*/
+@media screen and (min-width: 2000px) {
+	div.conteneur{
+		max-width: 1999px;
+		margin: 10%;
+	}
+}
+.titre{
+	text-align: center;
+	color: rgb(75, 70, 76);
+}
+p{
+	text-align: center;
+	color: black;
+}
+img{
+	background-color: lightgray;
+	object-fit: cover;
+	max-width: 400px;
+	max-height: 400px;
+}
+
+/*enete*/
+header{
+	text-align: center;
+}
+p.logo{
+	color: red;
+	padding: 10px;
+	font-size: 50px;
+	font-weight: bold;
+	margin-bottom: 1%;
+}
+img.logo{
+	width: 40px;
+	height: 40px;
+}
+p.logo:hover, img.logo:hover{
+	color: rgb(192, 3, 3);
+}
+div.sommaire{
+	margin: 0%;
+	padding: 2%;
+	background-color: rgb(233, 236, 239);
+}
+a.sommaire{
+	color: rgb(75, 70, 76);
+	text-decoration: none;
+	font-weight: bold;
+	padding: 2%;
+	text-transform: uppercase;
+}
+ /*responsive menu*/
+@media only screen and ( min-width: 1071px) {
+	a.sommaire{
+		font-size: 80%;
+	}
+}
+@media only screen and (max-width: 1070px){
+	a.sommaire{
+		font-size: 50%;
+	}	
+}
+
+
+a.sommaire:hover{
+	border-top: 2px solid red;
+	background-color: rgb(255, 200, 200);
+	color: red;
+}
+form.theme{
+	 
+	float: right; 
+	font-weight: bold;
+}
+form.theme:hover{
+	border-top: 2px solid red;
+	background-color: rgb(255, 200, 200);
+	color: red;
+	margin-bottom: 0%;
+}
+
+
+/*contenu*/
+body{
+	font-family: 'Times New Roman';
+}
+fieldset{
+	border: 0cm;
+	background-color: rgb(233, 236, 239);
+}
+form{
+	text-align: center;
+}
+input{
+	border-color: red;
+	box-sizing: border-box;
+	border-radius: 12px;
+    height: 56px;
+    padding: 17px 20px;
+    font-size: 14px;
+	margin: 1%;
+}
+input.bouton{
+	background-color:red;
+	color: white;
+	font-weight: bold;
+}
+input.bouton:hover{
+	background-color: rgb(192, 3, 3);
+}
+img.exemple{
+	margin: 10px;
+	width: 30%;
+	height: 30%;
+}
+img.service{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 100px;
+	
+}
+p.service{
+	background-color: #6C829DC0;
+	color: rgb(75, 70, 76);
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0%;
+	padding: 1%;
+	font-size: 65%;
+}
+@media only screen and ( max-width: 768px) { /*mobile*/
+	input.saisie{
+		width: 100%;
+	}
+	input.bouton{
+		width: 25%;
+		min-width: 138px;
+	}
+	div.offre{
+		position: relative;
+		display: inline-block;
+		width: 40%;
+		margin: 1%;
+	}
+	.resolutionPopup{
+		margin-inline: 20%;
+		width: 60%;
+		background-color: rgb(233, 236, 239);
+		box-shadow: red 0 0 10px 2px;
+		border-radius: 12px;
+	}
+	
+} 
+@media only screen and ( min-width: 768px) {/*ordinateur*/
+	input.saisie{
+		width: 50%;
+		max-width: 500px;
+	}
+	input.bouton{
+		width: 25%;
+		max-width: 250px;
+	}
+	div.offre{
+		position: relative;
+		display: inline-block;
+		width: 20%;
+		margin: 1%;
+	}
+	.resolutionPopup{
+		width: 40%;
+		margin-inline: 30%;
+		background-color: rgb(233, 236, 239);
+		box-shadow: red 0 0 10px 2px;
+	}
+	
+}
+
+/*pieds de page*/
+footer{
+	padding: 1px;
+	text-align: center;
+	background-color: #C5C5C5;
+	border-top: 2px solid #AAA;
+}
+div.contact{
+	width: 50%;
+	display: inline-block;
+	margin: 10px;
+}
+div.logo{
+	width: 15%;
+	max-width: 120px;
+	display: inline-block;
+	margin: 10px;
+}
+
+select{
+	border: none;
+	border-radius: 5px;
+	height: 50px;
+}
+
+.resolutionPopup p{
+	text-align: center;
+	/*background-color: #6C829DC0;*/
+}
+
+.selectmedaitype{
+	display: none;
+	justify-content: center;
+}
+
+.videoresolution{
+	display: box;
+	width: 90%;
+	margin-inline: 5%;
+}
+
+.videoresolution button{
+	border-color: rgb(245, 112, 112);
+	border-radius: 12px;
+	margin-inline: 5%;
+	width: 90%;
+    height: 30px;
+	padding: auto;
+	margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.resolutionPopup p{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.videoresolution button:hover{
+	background-color: red;
+	color:beige
+}
+
+@keyframes rotatediv{
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+}
+
+.loadresolution{
+	height: 50px;
+	width: 50px;
+	margin-inline: auto;
+	margin-bottom: 10px;
+}
+
+.loadresolution button{
+	border-radius: 50%;
+	width: 100%;
+	border-bottom-color: red;
+	border-right-color: red ;
+	height: 100%;
+	box-shadow: none;
+	border-width: 3px;
+	animation-name: rotatediv;
+	animation-duration: .5s;
+	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+}
+
+.hidden{
+	display: none;
+}
